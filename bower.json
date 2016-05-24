@@ -1,11 +1,11 @@
 {
   "name": "Skeleton-Sass",
   "version": "2.0.4",
-  "homepage": "https://github.com/whatsnewsaes/Skeleton-Sass",
+  "homepage": "https://github.com/dvlopes/Skeleton-Sass",
   "authors": [
-    "Seth Coelen <scoelen89@gmail.com> (http://SethCoelen.com)"
+    "Diego Versiani <diegoversiani@gmail.com> (http://dvlopes.github.io)"
   ],
-  "description": "The (un)official Sass Version of Skeleton (2.0.4): A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
+  "description": "An improved Version of Skeleton-Sass: A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
   "main": "scss/skeleton.scss",
   "keywords": [
     "skeleton",

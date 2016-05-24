@@ -1,16 +1,16 @@
 {
   "name": "skeleton-scss",
   "version": "2.0.4",
-  "description": "The (un)official Sass Version of Skeleton (2.0.4): A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
+  "description": "An improved Version of Skeleton-Sass: A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
   "repository": {
     "type": "git",
-    "url": "https://github.com/WhatsNewSaes/Skeleton-Sass"
+    "url": "https://github.com/dvlopes/Skeleton-Sass.git"
   },
   "bugs": {
-    "url": "https://github.com/WhatsNewSaes/Skeleton-Sass/issues"
+    "url": "https://github.com/dvlopes/Skeleton-Sass/issues"
   },
-  "homepage": "https://github.com/whatsnewsaes/Skeleton-Sass",
-  "author": "Seth Coelen <scoelen89@gmail.com>  (http://sethcoelen.com/)",
+  "homepage": "https://github.com/dvlopes/Skeleton-Sass",
+  "author": "Diego Versiani <diegoversiani@gmail.com>  (http://dvlopes.github.io/)",
   "keywords": [
     "skeleton",
     "sass",
@@ -19,11 +19,17 @@
     "boilerplate"
   ],
   "license": "MIT",
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-sass": "~0.8.1",
-    "node-sass": "~3.4.2",
-    "grunt-sass": "~1.1.0"
+  "dependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-ignore": "^2.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.5",
+    "gulp-cssnano": "^2.1.1"
   }
 }
