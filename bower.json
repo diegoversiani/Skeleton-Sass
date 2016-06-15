@@ -1,9 +1,9 @@
 {
   "name": "Skeleton-Sass",
   "version": "2.0.4",
-  "homepage": "https://github.com/dvlopes/Skeleton-Sass",
+  "homepage": "https://github.com/diegoversiani/Skeleton-Sass",
   "authors": [
-    "Diego Versiani <diegoversiani@gmail.com> (http://dvlopes.github.io)"
+    "Diego Versiani <diegoversiani@gmail.com> (http://diegoversiani.me)"
   ],
   "description": "An improved Version of Skeleton-Sass: A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
   "main": "scss/skeleton.scss",
