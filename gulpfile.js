@@ -1,6 +1,7 @@
 // Defining base pathes
 var basePaths = {
-    bower: './bower_components/'
+    node: './node_modules/',
+    scss: './scss/',
 };
 
 // Defining requirements
@@ -15,7 +16,7 @@ var uglify = require('gulp-uglify');
 var ignore = require('gulp-ignore');
 var rimraf = require('gulp-rimraf');
 
-// Run: 
+// Run:
 // gulp sass
 // Compiles SCSS files in CSS
 gulp.task('sass', function () {
@@ -25,7 +26,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./css'));
 });
 
-// Run: 
+// Run:
 // gulp watch
 // Starts watcher. Watcher runs gulp sass task on changes
 gulp.task('watch', function () {
@@ -33,19 +34,25 @@ gulp.task('watch', function () {
     gulp.watch('./css/skeleton.css', ['cssnano']);
 });
 
-// Run: 
+// Run:
 // gulp nanocss
 // Minifies CSS files
 gulp.task('cssnano', ['cleancss'], function(){
-  return gulp.src('./css/*.css')
-    .pipe(plumber())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(cssnano({discardComments: {removeAll: true}}))
-    .pipe(gulp.dest('./css/'));
-}); 
+    return gulp.src('./css/*.css')
+        .pipe(plumber())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(cssnano({discardComments: {removeAll: true}}))
+        .pipe(gulp.dest('./css/'));
+});
 
 gulp.task('cleancss', function() {
-  return gulp.src('./css/*.min.css', { read: false }) // much faster 
-    .pipe(ignore('skeleton.css'))
-    .pipe(rimraf());
+    return gulp.src('./css/*.min.css', { read: false }) // much faster
+        .pipe(ignore('skeleton.css'))
+        .pipe(rimraf());
+});
+
+gulp.task('update-dependencies', function() {
+    gulp.src( basePaths.node + 'normalize.css/normalize.css' )
+        .pipe( rename( 'base/_normalize.scss' ) )
+        .pipe( gulp.dest( basePaths.scss ) );
 });

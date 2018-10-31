@@ -12,15 +12,19 @@ Check out <http://getskeleton.com> for documentation and details.
 
 ## Changelog - comparing to original repository
 
+            - ** Oct 31st 2018 **
+                   - Update normalize.css to v8.0.0
+                   - Update dev dependencies to latest version
+                   - Load all dependencies with NPM
+                   - Remove support for Bower
+
             - ** May 24th 2016 **
                    - Added variable `$column-starts-at-breakpoint`.
 
 ## Getting started
 
-### Install Global Dependancies
+### Install Global Dependencies
   * [Node.js](http://nodejs.org)
-  * [bower](http://bower.io): `[sudo] npm install bower -g`
-  * [grunt.js](http://gruntjs.com): `[sudo] npm install -g grunt-cli`
 
 ### Install Local Dependancies
   * [Download zip](https://github.com/whatsnewsaes/Skeleton-Sass/archive/master.zip), [clone the repo](github-mac://openRepo/https://github.com/whatsnewsaes/Skeleton-Sass) or `bower install skeleton-scss` from your terminal
@@ -40,7 +44,7 @@ skeleton/
 ├── images/
 │   └── favicon.png
 ├── package.json
-├── Gruntfile.js
+├── gulpfile.js
 └── README.md
 
 ```

@@ -1,6 +1,6 @@
 {
   "name": "skeleton-scss",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "An improved Version of Skeleton-Sass: A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
   "repository": {
     "type": "git",
@@ -20,16 +20,18 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "bower": "^1.7.9",
-    "gulp": "^3.9.0",
+    "normalize.css": "~8.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
     "gulp-ignore": "^2.0.1",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-rimraf": "^0.2.0",
-    "gulp-sass": "^2.2.0",
-    "gulp-uglify": "^1.5.3",
-    "gulp-watch": "^4.3.5",
-    "gulp-cssnano": "^2.1.1"
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-watch": "^5.0.1"
   }
 }
